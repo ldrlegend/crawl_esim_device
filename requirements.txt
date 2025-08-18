@@ -1,0 +1,26 @@
+# Optimized eSIM Device Crawler Dependencies
+# Core dependencies for web scraping
+scrapy>=2.13.0,<3.0.0
+scrapy-playwright>=0.0.34,<1.0.0
+playwright>=1.40.0,<2.0.0
+
+# HTTP client and web framework
+requests>=2.32.0,<3.0.0
+fastapi>=0.104.0,<1.0.0
+uvicorn[standard]>=0.24.0,<1.0.0
+
+# Type hints and data validation
+typing-extensions>=4.8.0,<5.0.0
+pydantic>=2.0.0,<3.0.0
+
+# Performance and monitoring
+urllib3>=2.0.0,<3.0.0
+certifi>=2023.0.0
+
+# Optional: For better JSON handling and validation
+jsonschema>=4.0.0,<5.0.0
+
+# Development dependencies (optional)
+# pytest>=7.0.0,<8.0.0
+# black>=23.0.0,<24.0.0
+# flake8>=6.0.0,<7.0.0
