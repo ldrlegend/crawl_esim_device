@@ -17,8 +17,13 @@ pydantic>=2.0.0,<3.0.0
 urllib3>=2.0.0,<3.0.0
 certifi>=2023.0.0
 
-# Optional: For better JSON handling and validation
-jsonschema>=4.0.0,<5.0.0
+# Additional utilities (optional - for future use)
+# python-multipart>=0.0.6,<1.0.0  # For file uploads in FastAPI
+# aiofiles>=23.0.0,<24.0.0       # For async file operations
+
+# Scrapy dependencies
+# itemadapter>=0.8.0,<1.0.0
+twisted>=22.0.0,<23.0.0
 
 # Development dependencies (optional)
 # pytest>=7.0.0,<8.0.0

@@ -1,0 +1,8 @@
+authtoken: 31S81hJFruZoa39OwtlvX5rJvQe_597j6r2QZsv8vKwWDFgeB
+region: us
+log_level: info
+tunnels:
+  esimdevice-crawl:
+    proto: http
+    addr: 8003
+    inspect: false
