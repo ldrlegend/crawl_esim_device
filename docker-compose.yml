@@ -1,11 +1,11 @@
-version: '3.8'
+# version: '3.8'
 
 services:
-  esimdevice-crawl:
+  fastapi-app:
     build:
       context: .
       dockerfile: dockerfile
-    container_name: esimdevice-crawl
+    container_name: fastapi-app
     ports:
       - "8003:8003"
     # environment:
