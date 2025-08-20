@@ -23,7 +23,9 @@ certifi>=2023.0.0
 
 # Scrapy dependencies
 # itemadapter>=0.8.0,<1.0.0
-twisted>=22.0.0,<23.0.0
+
+# check if this is needed
+# twisted>=22.0.0,<23.0.0
 
 # Development dependencies (optional)
 # pytest>=7.0.0,<8.0.0

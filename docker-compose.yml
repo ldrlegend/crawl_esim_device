@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  esimdevice-crawl:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: esimdevice-crawl
+    ports:
+      - "8003:8003"
+    # environment:
+    #   - NGROK_AUTH_TOKEN=${NGROK_AUTH_TOKEN}
+    #   - NGROK_DOMAIN=${NGROK_DOMAIN}
+    restart: unless-stopped
+
+
+
+  # Alternative: Separate services (uncomment if needed)
+  # api:
+  #   image: esimdevice-crawl
+  #   command: uvicorn api:app --host 0.0.0.0 --port 8003 --reload
+  #   ports:
+  #     - "8003:8003"
+  #   restart: unless-stopped
+  # 
+  # ngrok:
+  #   image: ngrok/ngrok:latest
+  #   restart: unless-stopped
+  #   command: http api:8003 --domain=${NGROK_DOMAIN}
+  #   environment:
+  #     - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
+  #   depends_on:
+  #     - api
+  #   ports:
+  #     - "4040:4040"  # ngrok web interface
